@@ -1323,27 +1323,6 @@ pre .javascript .function {
 .widget ol ol {
   list-style: decimal;
 }
-.category-list-count,
-.tag-list-count,
-.archive-list-count {
-  padding-left: 5px;
-  color: #999;
-  font-size: 0.85em;
-}
-.category-list-count:before,
-.tag-list-count:before,
-.archive-list-count:before {
-  content: "(";
-}
-.category-list-count:after,
-.tag-list-count:after,
-.archive-list-count:after {
-  content: ")";
-}
-.tagcloud a {
-  margin-right: 5px;
-  display: inline-block;
-}
 .category-button {
     cursor: pointer;
     background-color: #ffcc99; /* 背景色 */
