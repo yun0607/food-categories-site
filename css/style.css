@@ -1344,3 +1344,16 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+.category-button {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.category-button:hover {
+    background-color: #d9d9d9;
+}
+
