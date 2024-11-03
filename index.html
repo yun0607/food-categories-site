@@ -334,14 +334,22 @@ CP值超高的漢堡店！每份漢堡都可以加價升級套餐，店裡有三
  $(document).ready(function() {
     $(".category-button").on("click", function() {
         var category = $(this).data("category");
-        $(".section").hide(); // 隱藏所有區塊
-        $("." + category).show(); // 顯示所選分類的區塊
-        $("html, body").animate({
-            scrollTop: $("." + category).first().offset().top
-        }, 800);
+
+        if (category) { // 若按下的是分類按鈕
+            $(".section").hide(); // 隱藏所有區塊
+            $("." + category).show(); // 顯示所選分類的區塊
+            $("html, body").animate({
+                scrollTop: $("." + category).first().offset().top
+            }, 800);
+        }
+    });
+
+    // 顯示全部按鈕的點擊事件
+    $("#show-all").on("click", function() {
+        $(".section").show(); // 顯示所有區塊
+        $("html, body").animate({ scrollTop: 0 }, 800); // 回到頁面頂端
     });
 });
-
 </script>
 
 
