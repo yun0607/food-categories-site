@@ -1346,14 +1346,21 @@ pre .javascript .function {
 }
 .category-button {
     cursor: pointer;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
+    background-color: #ffcc99; /* 背景色 */
+    padding: 8px 15px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #ff9966;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .category-button:hover {
-    background-color: #d9d9d9;
+    background-color: #ff9966;
+    color: #fff;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
-
