@@ -1324,22 +1324,26 @@ pre .javascript .function {
   list-style: decimal;
 }
 .category-button {
-    cursor: pointer;
-    background-color: #ffcc99; /* 背景色 */
-    padding: 8px 15px;
-    margin: 10px 5px;
-    border-radius: 20px;
-    color: #333;
-    font-weight: bold;
-    border: 2px solid #ff9966;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    transition: all 0.3s ease;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4a90e2;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .category-button:hover {
-    background-color: #ff9966;
-    color: #fff;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
+    background-color: #357ab7;
+    transform: translateY(-2px); /* 讓按鈕稍微上移 */
+}
+
+.category-button:active {
+    background-color: #2a5d8f;
+    transform: translateY(0); /* 按下時回到原位 */
 }
